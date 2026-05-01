@@ -55,7 +55,7 @@
     .menu-section { margin-bottom: 2.6rem; }
 
     .menu-sub-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(1.15rem, 2.6vw, 1.5rem);
       color: var(--gold);
       letter-spacing: 0.12em;
@@ -124,25 +124,9 @@
       margin-top: 0.22rem;
       line-height: 1.55;
     }
-    .item-tags {
-      margin-top: 0.26rem;
-      display: flex;
-      gap: 0.26rem;
-      flex-wrap: wrap;
-    }
-    .itag {
-      font-size: 0.63rem;
-      padding: 0.07rem 0.36rem;
-      border-radius: 2px;
-      letter-spacing: 0.05em;
-    }
-    .itag-gold  { border: 1px solid rgba(201,169,126,0.32); color: rgba(201,169,126,0.72); }
-    .itag-green { border: 1px solid rgba(110,180,70,0.35);  color: rgba(130,200,90,0.8); }
-    .itag-warn  { border: 1px solid rgba(200,150,60,0.35);  color: rgba(210,165,85,0.8); }
-    .itag-red   { border: 1px solid rgba(200,80,60,0.35);   color: rgba(220,110,90,0.8); }
 
     .item-price {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1.1rem;
       color: var(--gold);
       white-space: nowrap;
@@ -157,6 +141,21 @@
       flex-shrink: 0;
       padding-top: 0.1rem;
     }
+
+    /* ── Tags — inline next to item name ── */
+    .itag {
+      display: inline-block;
+      font-size: 0.63rem;
+      padding: 0.07rem 0.36rem;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+      vertical-align: middle;
+      margin-left: 0.28rem;
+    }
+    .itag-gold  { border: 1px solid rgba(201,169,126,0.32); color: rgba(201,169,126,0.72); }
+    .itag-green { border: 1px solid rgba(110,180,70,0.35);  color: rgba(130,200,90,0.8); }
+    .itag-warn  { border: 1px solid rgba(200,150,60,0.35);  color: rgba(210,165,85,0.8); }
+    .itag-red   { border: 1px solid rgba(200,80,60,0.35);   color: rgba(220,110,90,0.8); }
 
     /* ── 2-column grid (desktop only) ── */
     .col2 {
@@ -260,182 +259,162 @@
         </div>
       </div>
 
-      <!-- 黑咖啡 — 單欄 -->
+      <!-- 黑咖啡 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">黑咖啡 <span class="en">Black Coffee</span></h3>
         <p class="ctx-note">自家配豆：香橙（淺中焙）花香．柑橘 ／ 醇遊（中深焙）堅果．可可</p>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">義式濃縮</span><span class="item-en">Espresso</span>
+              <span class="item-name">義式濃縮</span><span class="item-en">Espresso</span><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">熱</span>
               <div class="item-sub">（濃縮是品嚐咖啡豆風味的最佳選擇）</div>
-              <div class="item-tags"><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">熱</span></div>
             </div>
             <span class="item-price">$160</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">美式</span><span class="item-en">Americano</span>
+              <span class="item-name">美式</span><span class="item-en">Americano</span><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">冰 / 熱</span>
               <div class="item-sub">（義式濃縮加水，加牛奶 +$30）</div>
-              <div class="item-tags"><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">冰 / 熱</span></div>
             </div>
             <span class="item-price">$160</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">冰釀咖啡</span><span class="item-en">Cold Brew</span>
+              <span class="item-name">冰釀咖啡</span><span class="item-en">Cold Brew</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（以冷泡系的極多脂咖啡做長時間浸泡，香橙配豆）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">手沖咖啡</span><span class="item-en">Pour Over</span>
+              <span class="item-name">手沖咖啡</span><span class="item-en">Pour Over</span><span class="itag itag-gold">可選豆</span>
               <div class="item-sub">（依季節看豆單，加冰 +$20）</div>
-              <div class="item-tags"><span class="itag itag-gold">可選豆</span></div>
             </div>
             <span class="item-price">$230</span>
           </div>
         </div>
       </div>
 
-      <!-- 特調咖啡 — 單欄 -->
+      <!-- 特調咖啡 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">特調咖啡 <span class="en">Special Coffee</span></h3>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">可樂咖啡</span><span class="item-en">Espresso Cola</span>
+              <span class="item-name">可樂咖啡</span><span class="item-en">Espresso Cola</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（濃縮加可樂）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$180</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">蜜蜂冰搖</span><span class="item-en">Honey Shakerato</span>
+              <span class="item-name">蜜蜂冰搖</span><span class="item-en">Honey Shakerato</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（濃縮加入蜂蜜、龍眼蜜快速冰搖）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">通寧咖啡</span><span class="item-en">Espresso Tonic</span>
+              <span class="item-name">通寧咖啡</span><span class="item-en">Espresso Tonic</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（杯緣沾鹽，濃縮加通寧水）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">西西里咖啡</span><span class="item-en">Sicily Iced Coffee</span>
+              <span class="item-name">西西里咖啡</span><span class="item-en">Sicily Iced Coffee</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（美式為基底加入新鮮檸檬汁及有機砂糖，通寧版 +$30）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">鳳凰咖啡</span><span class="item-en">Pineapple Jam Coffee</span>
+              <span class="item-name">鳳凰咖啡</span><span class="item-en">Pineapple Jam Coffee</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（美式為基底加入自製鳳梨醬，通寧版 +$30）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$180</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">洛神咖啡</span><span class="item-en">Roselle Coffee</span>
+              <span class="item-name">洛神咖啡</span><span class="item-en">Roselle Coffee</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（美式為基底加入自製洛神花糖漿、焦糖，最後撒上洛神粉）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">無花果咖啡</span><span class="item-en">Fig Jam Coffee</span>
+              <span class="item-name">無花果咖啡</span><span class="item-en">Fig Jam Coffee</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（美式為基底加入自製鳳梨醬、無花果醬、綠茶）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">霞</span><span class="item-en">Rosy Cloud</span>
+              <span class="item-name">霞</span><span class="item-en">Rosy Cloud</span><span class="itag itag-gold">冰</span>
               <div class="item-sub">（香橙配豆冰釀咖啡加入白桃果醬、泡泡鳳龍，可做以浸泡）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰</span></div>
             </div>
             <span class="item-price">$250</span>
           </div>
         </div>
       </div>
 
-      <!-- 牛奶咖啡 — 單欄 -->
+      <!-- 牛奶咖啡 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">牛奶咖啡 <span class="en">Milk Coffee</span></h3>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">卡布奇諾</span><span class="item-en">Cappuccino</span>
+              <span class="item-name">卡布奇諾</span><span class="item-en">Cappuccino</span><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">熱</span>
               <div class="item-sub">（奶泡厚，咖啡味比拿鐵重）</div>
-              <div class="item-tags"><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">熱</span></div>
             </div>
             <span class="item-price">$170</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">蜂蜜肉桂卡布</span><span class="item-en">Honey Cinnamon Cappuccino</span>
+              <span class="item-name">蜂蜜肉桂卡布</span><span class="item-en">Honey Cinnamon Cappuccino</span><span class="itag itag-gold">熱</span>
               <div class="item-sub">（濃縮加入牛奶、蜂蜜龍眼蜜及肉桂粉）</div>
-              <div class="item-tags"><span class="itag itag-gold">熱</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">茉莉花茶卡布</span><span class="item-en">Jasmine Cappuccino</span>
+              <span class="item-name">茉莉花茶卡布</span><span class="item-en">Jasmine Cappuccino</span><span class="itag itag-gold">熱</span>
               <div class="item-sub">（濃縮加入牛奶及現泡茉莉花茶湯，現泡需稍等）</div>
-              <div class="item-tags"><span class="itag itag-gold">熱</span></div>
             </div>
             <span class="item-price">$220</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">拿鐵</span><span class="item-en">Latte</span>
+              <span class="item-name">拿鐵</span><span class="item-en">Latte</span><span class="itag itag-gold">冰 / 熱</span>
               <div class="item-sub">（咖啡味比卡布清爽，風味果露 +$20：香草 / 蜂蜜 / 黑糖）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰 / 熱</span></div>
             </div>
             <span class="item-price">$180</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">記得我咖啡</span><span class="item-en">Rememberme Coffee</span>
+              <span class="item-name">記得我咖啡</span><span class="item-en">Rememberme Coffee</span><span class="itag itag-gold">冰 / 熱</span>
               <div class="item-sub">（拿鐵加入記得我醬、特調巧克力粉，上層鋪滿可可粉、黑糖、砂糖炙燒）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰 / 熱</span></div>
             </div>
             <span class="item-price">$200</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">太妃糖拿鐵</span><span class="item-en">Toffee Coffee Latte</span>
+              <span class="item-name">太妃糖拿鐵</span><span class="item-en">Toffee Coffee Latte</span><span class="itag itag-gold">冰 / 熱</span>
               <div class="item-sub">（拿鐵加入自製太妃糖醬，上方撒棒棒糖炙燒）</div>
-              <div class="item-tags"><span class="itag itag-gold">冰 / 熱</span></div>
             </div>
             <span class="item-price">$200</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">迷彩拿鐵</span><span class="item-en">Military Coffee Latte</span>
+              <span class="item-name">迷彩拿鐵</span><span class="item-en">Military Coffee Latte</span><span class="itag itag-gold">熱</span>
               <div class="item-sub">（拿鐵加入小山園青嚴無糖抹茶粉和白巧克力）</div>
-              <div class="item-tags"><span class="itag itag-gold">熱</span></div>
             </div>
             <span class="item-price">$200</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">義式 1+1</span><span class="item-en">Espresso + Cappuccino</span>
+              <span class="item-name">義式 1+1</span><span class="item-en">Espresso + Cappuccino</span><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">熱</span>
               <div class="item-sub">（自家配豆濃縮＋奶泡，兩杯同上）</div>
-              <div class="item-tags"><span class="itag itag-gold">可選豆</span><span class="itag itag-gold">熱</span></div>
             </div>
             <span class="item-price">$200</span>
           </div>
@@ -692,17 +671,15 @@
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">精選啤酒</span>
+              <span class="item-name">精選啤酒</span><span class="itag itag-warn">含酒精</span>
               <div class="item-sub">（品項依季節替換，請洽現場黑板）</div>
-              <div class="item-tags"><span class="itag itag-warn">含酒精</span></div>
             </div>
             <span class="item-price-soft">看黑板</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">老闆特調</span><span class="item-en">Special Cocktail</span>
+              <span class="item-name">老闆特調</span><span class="item-en">Special Cocktail</span><span class="itag itag-warn">含酒精</span>
               <div class="item-sub">（跟我們說想要的風味，盡可能滿足你！）</div>
-              <div class="item-tags"><span class="itag itag-warn">含酒精</span></div>
             </div>
             <span class="item-price">$300</span>
           </div>
@@ -754,10 +731,10 @@
         </div>
       </div>
 
-      <!-- 特製鬆餅 — 單欄 -->
+      <!-- 特製鬆餅 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">特製鬆餅 <span class="en">Waffle</span> <span class="tnote">供應至 23:59 · 附冰淇淋</span></h3>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
               <span class="item-name">記得我鬆餅</span><span class="item-en">Rememberme Waffles</span>
@@ -796,10 +773,10 @@
         </div>
       </div>
 
-      <!-- 手作小點 — 單欄 -->
+      <!-- 手作小點 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">手作小點 <span class="en">Handcrafted Sweets</span></h3>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
               <span class="item-name">焦糖焙茶布丁</span>
@@ -809,9 +786,8 @@
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">提拉米蘇</span>
+              <span class="item-name">提拉米蘇</span><span class="itag itag-warn">含酒精</span>
               <div class="item-sub">（招牌提拉米蘇，慕斯質地細緻）</div>
-              <div class="item-tags"><span class="itag itag-warn">含酒精</span></div>
             </div>
             <span class="item-price">$190</span>
           </div>
@@ -896,17 +872,15 @@
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">泰式魚塊沙拉</span>
-              <div class="item-sub">（炸魚塊、洋蔥絲、金桔、特製酸辣醬）</div>
-              <div class="item-tags"><span class="itag itag-red">含花生，過敏者可告知不加</span></div>
+              <span class="item-name">泰式魚塊沙拉</span><span class="itag itag-red">⚠ 含花生</span>
+              <div class="item-sub">（炸魚塊、洋蔥絲、金桔、特製酸辣醬，過敏者可告知不加）</div>
             </div>
             <span class="item-price">$270</span>
           </div>
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">栗子南瓜優格沙拉</span>
+              <span class="item-name">栗子南瓜優格沙拉</span><span class="itag itag-green">蛋奶素 L/O Veg</span>
               <div class="item-sub">（栗子南瓜、特製優格醬、果乾、堅果）</div>
-              <div class="item-tags"><span class="itag itag-green">素食 Lo Veg</span></div>
             </div>
             <span class="item-price">$270</span>
           </div>
@@ -951,15 +925,14 @@
         </div>
       </div>
 
-      <!-- 義大利麵 — 單欄 -->
+      <!-- 義大利麵 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">義大利麵 <span class="en">Spaghetti</span> <span class="tnote">供應至 20:59</span></h3>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
-              <span class="item-name">綠色蔬果義大利麵</span><span class="item-en">Vegetable Spaghetti</span>
+              <span class="item-name">綠色蔬果義大利麵</span><span class="item-en">Vegetable Spaghetti</span><span class="itag itag-green">全素 Vegan</span>
               <div class="item-sub">（以黑胡椒拌炒各季節時蔬）</div>
-              <div class="item-tags"><span class="itag itag-green">全素 100% Vegan</span></div>
             </div>
             <span class="item-price">$290</span>
           </div>
@@ -980,10 +953,10 @@
         </div>
       </div>
 
-      <!-- 炊飯 — 單欄 -->
+      <!-- 炊飯 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">炊飯 <span class="en">Risotto</span> <span class="tnote">供應至 20:59</span></h3>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
               <span class="item-name">脆塔起司牛肉炊飯</span><span class="item-en">Cheese Beef Risotto &amp; Crispy Bacon</span>
@@ -1008,11 +981,11 @@
         </div>
       </div>
 
-      <!-- 叻沙咖哩飯 — 單欄 -->
+      <!-- 叻沙咖哩飯 — 2欄 -->
       <div class="menu-section">
         <h3 class="menu-sub-title">叻沙咖哩飯 <span class="en">Laksa Curry Rice</span> <span class="tnote">供應至 23:59</span></h3>
         <p class="ctx-note">辛香料調製，內含椰奶、蝦醬、時蔬，微辣系 · 太陽蛋 +$20 ／ 起司醬 +$30</p>
-        <div class="menu-items">
+        <div class="col2 menu-items">
           <div class="menu-item">
             <div class="item-info">
               <span class="item-name">新加坡風味叻沙咖哩飯</span><span class="item-en">Chicken Curry Rice</span>
