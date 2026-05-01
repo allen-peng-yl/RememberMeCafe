@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Remember Me 記得我．Café — 台北深夜咖啡館，營業至凌晨兩點，寵物友善、不限時、現場駐唱。捷運小巨蛋站旁。" />
+  <title>Remember Me 記得我．Café｜深夜咖啡館 · 台北松山</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Remember Me</a>
+
+  <ul class="nav-links">
+    <li><a href="#about">關於我們</a></li>
+    <li><a href="#features">特色</a></li>
+    <li><a href="#menu">菜單</a></li>
+    <li><a href="#space">藝文空間</a></li>
+    <li><a href="#contact">聯絡資訊</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="開啟選單">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about">關於我們</a>
+  <a href="#features">特色</a>
+  <a href="#menu">菜單</a>
+  <a href="#space">藝文空間</a>
+  <a href="#contact">聯絡資訊</a>
+</div>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-noise"></div>
+  <canvas id="stars-canvas"></canvas>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Welcome to</p>
+    <h1 class="hero-title">Remember <span>Me</span></h1>
+    <p class="hero-subtitle">記得我．Café</p>
+
+    <div class="hero-tags">
+      <span class="hero-tag">🌙 深夜咖啡館</span>
+      <span class="hero-tag">🐾 寵物友善</span>
+      <span class="hero-tag">⏳ 不限時</span>
+      <span class="hero-tag">🎸 Live Music</span>
+      <span class="hero-tag">🎨 藝文空間</span>
+    </div>
+
+    <a href="#about" class="hero-cta">探索我們的世界</a>
+  </div>
+
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-hint-line"></div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Typographic panel -->
+      <div class="about-typo fade-up">
+        <div class="at-city">Taipei · Songshan · 小巨蛋</div>
+        <div class="at-rule"></div>
+        <div class="at-name">記得我</div>
+        <div class="at-sub-zh">Remember Me Café</div>
+        <div class="at-rule-gold"></div>
+        <div class="at-hours">
+          <span class="at-time">12:00</span>
+          <span class="at-arrow">→</span>
+          <span class="at-time gold">02:00</span>
+        </div>
+        <div class="at-rule"></div>
+        <p class="at-tagline script">every cup tells a story</p>
+      </div>
+
+      <!-- Text -->
+      <div class="about-body fade-up">
+        <span class="label">Our Story</span>
+        <h2 class="section-title">不只是一杯咖啡，<br>是一個安靜的角落。</h2>
+        <div class="divider"></div>
+
+        <blockquote class="pull-quote">
+          「當城市漸漸入睡，<br>我們為你點亮一盞燈。」
+        </blockquote>
+
+        <p>
+          在台北的深夜，有這樣一個地方——位於小巨蛋旁的巷弄之間，
+          不需要多麼華麗的門面，只需要推開那扇門，
+          你就會知道：這裡，是你今晚的歸處。
+        </p>
+        <p>
+          Remember Me 記得我咖啡，週二至週六營業至凌晨兩點。
+          我們是深夜趕稿的你的陪伴，是需要靜靜發呆的你的出口，
+          也是約老朋友敘舊、或帶著毛孩散步後順道來坐坐的溫暖所在。
+        </p>
+        <p>
+          這裡有手沖咖啡的香氣、Live Band 的旋律、每月輪換的展覽，
+          以及每一杯咖啡附贈的那張小紙條——
+          提醒你，你值得被好好記住。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FEATURES
+     ============================================================ -->
+<section id="features">
+  <div class="container">
+    <div class="features-header fade-up">
+      <span class="label">Why Remember Me</span>
+      <h2 class="section-title">讓你留下來的六個理由</h2>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card fade-up">
+        <span class="feature-icon">🌙</span>
+        <h3 class="feature-title">深夜營業</h3>
+        <p class="feature-desc">
+          週二至週六凌晨兩點才打烊，週日、週一也開到晚上十點。
+          無論幾點需要一杯咖啡，我們都為你開著。
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <span class="feature-icon">⏳</span>
+        <h3 class="feature-title">不限時用餐</h3>
+        <p class="feature-desc">
+          平日完全不限時，帶上電腦、書本、作業，
+          只需低消一杯飲品，你可以在這裡坐到忘記時間。
+          （假日限 3 小時，歡迎事先訂位）
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <span class="feature-icon">🎸</span>
+        <h3 class="feature-title">Live Band 現場演出</h3>
+        <p class="feature-desc">
+          每週數個夜晚，駐唱歌手與樂手在此現場演奏，
+          完全免費、無入場費。週末更開放素人報名，
+          現場即興點歌，沉浸在音樂的流動裡。
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <span class="feature-icon">🐾</span>
+        <h3 class="feature-title">寵物友善</h3>
+        <p class="feature-desc">
+          帶著你的毛孩一起來！攜帶寵物只需繫好牽繩或帶籠子入店，
+          我們歡迎每一位有毛的小客人，一起感受這個溫暖的深夜空間。
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <span class="feature-icon">💌</span>
+        <h3 class="feature-title">給未來的自己</h3>
+        <p class="feature-desc">
+          每一杯咖啡都附上一張小紙條，我們還保留一套「寫信給未來的自己」服務——
+          此刻的心情與心願，值得被好好記下來，留給未來的你。
+        </p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <span class="feature-icon">📶</span>
+        <h3 class="feature-title">工作者友善</h3>
+        <p class="feature-desc">
+          多數座位配備插座，提供免費 WiFi，
+          不收服務費，低消僅需一杯飲品。
+          還有行動充電器可租借，讓你專心工作或創作。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     MENU CTA
+     ============================================================ -->
+<section id="menu" class="" style="padding:0;">
+  <section id="menu-cta">
+    <div class="container menu-cta-inner fade-up">
+      <span class="label">Menu</span>
+      <h2 class="section-title">今晚，想喝什麼？</h2>
+      <div class="divider" style="margin: 1.5rem auto;"></div>
+      <div class="menu-preview-grid">
+        <span class="preview-chip">招牌焦糖脆殼拿鐵</span>
+        <span class="preview-chip">手沖咖啡</span>
+        <span class="preview-chip">司康組合</span>
+        <span class="preview-chip">海鮮燉飯</span>
+        <span class="preview-chip">焙茶布丁</span>
+        <span class="preview-chip">叻沙咖哩</span>
+      </div>
+      <a href="menu.html" class="menu-cta-btn">查看完整菜單 &nbsp;→</a>
+    </div>
+  </section>
+</section>
+
+
+<!-- ============================================================
+     ART SPACE
+     ============================================================ -->
+<section id="space">
+  <div class="container">
+    <div class="space-grid">
+
+      <!-- Text side -->
+      <div class="fade-up">
+        <span class="label">Art &amp; Culture</span>
+        <h2 class="section-title">音樂、藝術、文字，<br>還有你。</h2>
+        <div class="divider"></div>
+
+        <div class="space-pillars">
+
+          <div class="pillar">
+            <span class="pillar-num">01</span>
+            <div class="pillar-body">
+              <div class="pillar-title">Live Band 現場演出</div>
+              <p class="pillar-sub">每週數夜免費駐唱 · 週末開放素人上台</p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <span class="pillar-num">02</span>
+            <div class="pillar-body">
+              <div class="pillar-title">每月輪換藝廊</div>
+              <p class="pillar-sub">牆面是流動的展覽，每次來訪都不同</p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <span class="pillar-num">03</span>
+            <div class="pillar-body">
+              <div class="pillar-title">開放塗鴉本</div>
+              <p class="pillar-sub">色鉛筆與空白頁，等你留下一筆</p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <span class="pillar-num">04</span>
+            <div class="pillar-body">
+              <div class="pillar-title">「未完待續」藏書</div>
+              <p class="pillar-sub">隨時取閱，下次再續未讀完的故事</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Notes visual -->
+      <div class="space-notes fade-up">
+        <div class="note note-1">
+          <div class="note-line"></div>
+          <div class="note-line"></div>
+          <div class="note-line short"></div>
+          <p class="note-text script">今晚有駐唱</p>
+          <span class="note-time">19:00 – 21:00</span>
+        </div>
+        <div class="note note-2">
+          <div class="note-line"></div>
+          <div class="note-line short"></div>
+          <p class="note-text script">燈還亮著</p>
+          <span class="note-time">open until 02:00</span>
+        </div>
+        <div class="note note-3">
+          <div class="note-line"></div>
+          <div class="note-line"></div>
+          <div class="note-line short"></div>
+          <p class="note-text script">留下你的塗鴉</p>
+          <span class="note-time">open sketchbook ✦</span>
+        </div>
+        <div class="note note-4">
+          <div class="note-line short"></div>
+          <div class="note-line"></div>
+          <p class="note-text script">記得我</p>
+          <span class="note-time">Remember Me Café</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom: 3.5rem;">
+      <span class="label">Find Us</span>
+      <h2 class="section-title">來找我們</h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="contact-items fade-up">
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="c-label">地址</div>
+            <div class="c-value">
+              台北市松山區<br>
+              南京東路四段 133 巷 4 弄 16 號
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🚇</div>
+          <div>
+            <div class="c-label">交通</div>
+            <div class="c-value">
+              捷運小巨蛋站 5 號出口<br>
+              步行約 3 分鐘
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="c-label">電話</div>
+            <div class="c-value">
+              <a href="tel:0225471517">(02) 2547-1517</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <div class="c-label">營業時間</div>
+            <div class="hours-list">
+              <div class="hours-row">
+                <span class="hours-day">週一</span>
+                <span class="hours-time">12:00 – 22:00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">週二 – 六</span>
+                <span class="hours-time highlight">12:00 – 02:00 ✦ 深夜營業</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">週日</span>
+                <span class="hours-time">12:00 – 22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rules-strip">
+          <div class="rule-item"><span class="rule-dot"></span>低消一杯飲品</div>
+          <div class="rule-item"><span class="rule-dot"></span>不收服務費</div>
+          <div class="rule-item"><span class="rule-dot"></span>免費 WiFi · 附插座</div>
+          <div class="rule-item"><span class="rule-dot"></span>寵物友善（需牽繩）</div>
+          <div class="rule-item"><span class="rule-dot"></span>平日不限時</div>
+          <div class="rule-item"><span class="rule-dot"></span>假日限 3 小時</div>
+        </div>
+
+      </div>
+
+      <!-- Map + buttons -->
+      <div class="fade-up">
+        <div class="map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=Remember+Me+Cafe+台北市松山區南京東路四段133巷4弄16號&output=embed&hl=zh-TW&z=16"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Remember Me Café 地圖位置">
+          </iframe>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn-outline"
+             href="https://www.facebook.com/remembermecafe/"
+             target="_blank" rel="noopener">
+            📘 Facebook 粉絲頁
+          </a>
+          <a class="btn-fill" href="tel:0225471517">
+            📞 立即電話訂位
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">Remember Me</div>
+    <p class="footer-tagline">記得我．Café — 深夜咖啡館</p>
+    <div class="footer-divider"></div>
+    <nav class="footer-nav">
+      <a href="#about">關於我們</a>
+      <a href="#features">特色</a>
+      <a href="#menu">菜單</a>
+      <a href="#space">藝文空間</a>
+      <a href="#contact">聯絡資訊</a>
+      <a href="https://www.facebook.com/remembermecafe/" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+    <p class="footer-copy">
+      <span>台北市松山區南京東路四段 133 巷 4 弄 16 號</span><br>
+      (02) 2547-1517 &nbsp;·&nbsp; 捷運小巨蛋站 5 號出口
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
