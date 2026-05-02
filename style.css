@@ -2,7 +2,7 @@
    Remember Me 記得我．Café — Stylesheet
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@400;600&family=Noto+Serif+TC:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Dancing+Script:wght@400;600&family=Noto+Serif+TC:wght@300;400;500&display=swap');
 
 /* ── Variables ── */
 :root {
@@ -37,7 +37,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 
 /* ── Typography helpers ── */
-.serif   { font-family: 'Playfair Display', serif; }
+.serif   { font-family: 'Cinzel', serif; }
 .script  { font-family: 'Dancing Script', cursive; }
 .label {
   display: block;
@@ -48,7 +48,7 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 0.8rem;
 }
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-weight: 300;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.2;
@@ -97,7 +97,7 @@ a { color: inherit; text-decoration: none; }
   border-bottom-color: var(--border);
 }
 .nav-logo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.25rem;
   color: var(--gold);
   letter-spacing: 0.12em;
@@ -163,7 +163,7 @@ a { color: inherit; text-decoration: none; }
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 2rem;
   color: var(--text-dim);
   letter-spacing: 0.1em;
@@ -216,7 +216,7 @@ a { color: inherit; text-decoration: none; }
   animation: fadeInDown 1s ease 0.3s both;
 }
 .hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-weight: 300;
   font-size: clamp(3.5rem, 9vw, 7rem);
   letter-spacing: 0.06em;
@@ -226,7 +226,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-title span { color: var(--gold); }
 .hero-subtitle {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: clamp(1.1rem, 2.5vw, 1.6rem);
   font-style: italic;
   color: var(--gold);
@@ -358,7 +358,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 1.2rem;
 }
 .at-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 3.2rem;
   font-weight: 300;
   color: var(--text);
@@ -379,7 +379,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0.4rem 0;
 }
 .at-time {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5rem;
   color: var(--text-dim);
   letter-spacing: 0.05em;
@@ -398,7 +398,7 @@ blockquote.pull-quote {
   border-left: 2px solid var(--gold);
   padding-left: 1.5rem;
   margin: 2rem 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-style: italic;
   font-size: 1.35rem;
   color: var(--gold-light);
@@ -438,7 +438,7 @@ blockquote.pull-quote {
 /* no lift — feature cards are not clickable */
 .feature-icon { font-size: 2.2rem; margin-bottom: 1.2rem; display: block; }
 .feature-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.25rem;
   color: var(--gold-light);
   margin-bottom: 0.8rem;
@@ -543,7 +543,7 @@ blockquote.pull-quote {
 .menu-panel.active { display: block; }
 .menu-category { margin-bottom: 3.5rem; }
 .menu-cat-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.3rem;
   font-style: italic;
   color: var(--gold);
@@ -572,7 +572,7 @@ blockquote.pull-quote {
 .item-name { font-size: 0.93rem; color: var(--text); margin-bottom: 0.15rem; }
 .item-desc { font-size: 0.76rem; color: var(--text-muted); line-height: 1.5; }
 .item-price {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.05rem;
   color: var(--gold);
   white-space: nowrap;
@@ -631,7 +631,7 @@ blockquote.pull-quote {
 
 .menu-cards-section { padding: 0 0 6rem; background: var(--bg); }
 .menu-cat-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 0.75rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
@@ -706,7 +706,7 @@ blockquote.pull-quote {
   margin-bottom: 0.8rem;
 }
 .card-price {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.1rem;
   color: var(--gold);
 }
@@ -751,7 +751,7 @@ blockquote.pull-quote {
 }
 .pillar:first-child { border-top: 1px solid var(--border); }
 .pillar-num {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 0.75rem;
   color: var(--gold-dark);
   letter-spacing: 0.1em;
@@ -760,7 +760,7 @@ blockquote.pull-quote {
   min-width: 24px;
 }
 .pillar-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.15rem;
   color: var(--gold-light);
   margin-bottom: 0.25rem;
@@ -936,7 +936,7 @@ footer {
   text-align: center;
 }
 .footer-logo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-size: 2rem;
   color: var(--gold);
   letter-spacing: 0.08em;
